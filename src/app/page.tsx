@@ -19,8 +19,39 @@ import { sectionOrder, Section } from "@/data/section-order";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#FFFCF8]">
+      <nav className="sticky top-0 z-50 bg-[#FFFCF8]/95 backdrop-blur-sm">
+        <div className="max-w-screen-2xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 py-4 flex justify-end">
+          <ul className="flex items-center gap-5 md:gap-7 font-serif text-xs md:text-sm tracking-wide uppercase text-zinc-500">
+            <li>
+              <a
+                href="#news"
+                className="hover:text-zinc-900 transition-colors"
+              >
+                News
+              </a>
+            </li>
+            <li>
+              <a
+                href="#publications"
+                className="hover:text-zinc-900 transition-colors"
+              >
+                Publications
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className="hover:text-zinc-900 transition-colors"
+              >
+                Projects
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       {/* Don't have a great call on whether max-w-screen-xl is better */}
-      <div className="max-w-screen-2xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 py-24">
+      <div className="max-w-screen-2xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 pb-24 pt-8 md:pt-12">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-2">
           {/* Left Column - Fixed Info */}
@@ -32,7 +63,7 @@ export default function Home() {
           </div>
 
           {/* Right Column - Scrolling Content */}
-          <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-24">
+          <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-12">
             {/* About section is typically first */}
             {aboutMe.description && (
               <section>
@@ -50,7 +81,11 @@ export default function Home() {
                 case Section.News:
                   return (
                     newsData.length > 0 && (
-                      <section key={sectionName}>
+                      <section
+                        key={sectionName}
+                        id="news"
+                        className="scroll-mt-20"
+                      >
                         <h2 className="font-serif text-l mb-6 tracking-wide uppercase">
                           News
                         </h2>
@@ -76,7 +111,11 @@ export default function Home() {
                 case Section.Publication:
                   return (
                     publicationData.length > 0 && (
-                      <section key={sectionName}>
+                      <section
+                        key={sectionName}
+                        id="publications"
+                        className="scroll-mt-20"
+                      >
                         <h2 className="font-serif text-l mb-6 tracking-wide uppercase">
                           Publications
                         </h2>
@@ -105,7 +144,11 @@ export default function Home() {
                 case Section.Portfolio:
                   return (
                     portfolioData.length > 0 && (
-                      <section key={sectionName}>
+                      <section
+                        key={sectionName}
+                        id="projects"
+                        className="scroll-mt-20"
+                      >
                         <h2 className="font-serif text-md mb-6 tracking-wide uppercase">
                           Public Reports and Projects
                         </h2>
