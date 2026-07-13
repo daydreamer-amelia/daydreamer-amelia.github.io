@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="200" viewBox="0 0 160 200" fill="none">
+  <rect width="160" height="200" rx="10" fill="#F0FDF4"/>
+  <rect x="14" y="14" width="132" height="6" rx="3" fill="#16A34A"/>
+  <text x="16" y="44" fill="#14532D" font-family="Georgia, serif" font-size="9" font-weight="700">GREEN FINANCE</text>
+  <text x="16" y="66" fill="#166534" font-family="Georgia, serif" font-size="10" font-weight="700">Satellite &amp;</text>
+  <text x="16" y="82" fill="#166534" font-family="Georgia, serif" font-size="10" font-weight="700">Drone-Certified</text>
+  <text x="16" y="98" fill="#166534" font-family="Georgia, serif" font-size="10" font-weight="700">Green Bond</text>
+  <text x="16" y="126" fill="#16A34A" font-family="Arial, sans-serif" font-size="8">HKEX · AIRS · 2024</text>
+  <path d="M108 158 L124 146 L140 158 L140 176 L108 176 Z" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.5"/>
+  <path d="M116 176 L116 168 C116 164 132 164 132 168 L132 176" stroke="#16A34A" stroke-width="1.5"/>
+</svg>
