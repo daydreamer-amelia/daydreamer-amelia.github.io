@@ -32,7 +32,7 @@ export const publicationData: Publication[] = [
     conference: "ICML 2026",
     title:
       "Hugging Carbon: Quantifying the Training Carbon Emissions of AI Models at Scale",
-    authors: "Xinlei Wang, Ruibo Ming, Jing Qiu, Junhua Zhao, Jinjin Gu",
+    authors: "Xinlei Wang✉, Ruibo Ming, Jing Qiu, Junhua Zhao, Jinjin Gu",
     topics: ["AI Sustainability"],
     paperUrl: "https://arxiv.org/abs/2605.01549",
     codeUrl: "https://github.com/insait-institute/HuggingCarbon",

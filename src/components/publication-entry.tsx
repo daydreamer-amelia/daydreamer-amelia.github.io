@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import {
   Publication,
   PublicationTopic,
@@ -35,6 +35,22 @@ const publicationTagClassName =
   "inline-flex px-1.5 py-0.5 rounded-full border text-[10px] leading-tight font-normal";
 
 const filterOptions: PublicationFilter[] = ["All", ...publicationTopics];
+
+function formatAuthors(authors: string) {
+  const parts = authors.split(/(✉)/g);
+  return parts.map((part, index) =>
+    part === "✉" ? (
+      <Mail
+        key={index}
+        size={11}
+        className="inline-block ml-0.5 -mt-0.5 text-zinc-500"
+        aria-label="corresponding author"
+      />
+    ) : (
+      <span key={index}>{part}</span>
+    ),
+  );
+}
 
 function getPublicationImageUrl(publication: Publication): string {
   if (publication.imageUrl) {
@@ -174,7 +190,7 @@ export function PublicationEntry({
           {publication.title}
         </h3>
         <p className="text-xs text-zinc-600 mb-1.5 leading-relaxed">
-          {publication.authors}
+          {formatAuthors(publication.authors)}
         </p>
         {(publication.paperUrl ||
           publication.codeUrl ||

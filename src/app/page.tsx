@@ -15,6 +15,7 @@ import { awardsData } from "@/data/awards";
 import { ServiceList } from "@/components/service-entry";
 import { serviceData } from "@/data/service";
 import { sectionOrder, Section } from "@/data/section-order";
+import { Mail } from "lucide-react";
 
 export default function Home() {
   return (
@@ -116,9 +117,33 @@ export default function Home() {
                         id="publications"
                         className="scroll-mt-20"
                       >
-                        <h2 className="font-serif text-l mb-6 tracking-wide uppercase">
-                          Publications
+                        <h2 className="font-serif text-l mb-2 tracking-wide uppercase">
+                          Selected Publications
                         </h2>
+                        <p className="text-xs text-zinc-500 mb-6 leading-relaxed">
+                          For an up-to-date list of publications, check{" "}
+                          {aboutMe.googleScholarUrl ? (
+                            <a
+                              href={aboutMe.googleScholarUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline text-zinc-700 hover:text-zinc-900"
+                            >
+                              Google Scholar
+                            </a>
+                          ) : (
+                            "Google Scholar"
+                          )}
+                          . * denotes equal contribution (co-first author).{" "}
+                          <span className="inline-flex items-center gap-0.5 align-middle">
+                            <Mail
+                              size={11}
+                              className="inline text-zinc-500"
+                              aria-hidden="true"
+                            />
+                          </span>{" "}
+                          denotes corresponding author.
+                        </p>
                         <PublicationList items={publicationData} />
                       </section>
                     )
