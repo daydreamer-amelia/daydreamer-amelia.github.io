@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Github,
   Linkedin,
@@ -9,6 +8,7 @@ import {
 } from "lucide-react";
 import { AboutMe } from "@/data/aboutme";
 import { EmailLink } from "@/components/email-link";
+import { ProfilePhotoSlider } from "@/components/profile-photo-slider";
 
 interface ProfileSectionProps {
   aboutMe: AboutMe;
@@ -19,19 +19,19 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     return null;
   }
 
+  const photos =
+    aboutMe.imageUrls && aboutMe.imageUrls.length > 0
+      ? aboutMe.imageUrls
+      : aboutMe.imageUrl
+        ? [aboutMe.imageUrl]
+        : [];
+
   return (
     <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
-      {aboutMe.imageUrl && (
+      {photos.length > 0 && (
         <div className="w-1/3 md:w-full flex-shrink-0">
           <div className="md:w-[80%]">
-            <Image
-              src={aboutMe.imageUrl}
-              alt={aboutMe.name}
-              width={785}
-              height={1024}
-              priority
-              className="w-full h-auto rounded-xl"
-            />
+            <ProfilePhotoSlider images={photos} alt={aboutMe.name} />
           </div>
         </div>
       )}
