@@ -11,7 +11,7 @@ export const newsData: News[] = [
     date: "July 2026",
     emoji: "🌱",
     title:
-      "Hugging Carbon are selected among ICML 2026 Papers That Matter by Nebius Science",
+      "Hugging Carbon is selected among ICML 2026 Papers That Matter by Nebius Science",
     link: "https://nebius.science/stories/icml-papers-that-matter",
   },
   {
