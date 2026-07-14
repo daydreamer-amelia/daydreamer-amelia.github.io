@@ -23,7 +23,7 @@ export const newsData: News[] = [
   {
     date: "April 2026",
     emoji: "📝",
-    title: "EngiBench are accepted at ACL 2026 Findings",
+    title: "EngiBench is accepted at ACL 2026 Findings",
     link: "https://aclanthology.org/",
   },
   {
