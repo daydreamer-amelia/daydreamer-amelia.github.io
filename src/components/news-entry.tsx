@@ -3,10 +3,12 @@ import { News } from "@/data/news";
 
 export function NewsList({ items }: { items: News[] }) {
   return (
-    <div className="border border-zinc-200 rounded-lg bg-white/60 divide-y divide-zinc-200 shadow-sm">
-      {items.map((news, index) => (
-        <NewsEntry key={index} news={news} />
-      ))}
+    <div className="border border-zinc-200 rounded-lg bg-white/60 shadow-sm overflow-hidden">
+      <div className="max-h-[13.5rem] overflow-y-auto overscroll-contain divide-y divide-zinc-200 [scrollbar-width:thin] [scrollbar-color:theme(colors.zinc.300)_transparent]">
+        {items.map((news, index) => (
+          <NewsEntry key={index} news={news} />
+        ))}
+      </div>
     </div>
   );
 }

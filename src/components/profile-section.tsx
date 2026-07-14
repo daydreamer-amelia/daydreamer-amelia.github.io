@@ -23,13 +23,14 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
       {aboutMe.imageUrl && (
         <div className="w-1/3 md:w-full flex-shrink-0">
-          <div className="relative max-h-[45vh] md:w-[80%] aspect-[3/4]">
+          <div className="md:w-[80%]">
             <Image
               src={aboutMe.imageUrl}
               alt={aboutMe.name}
-              fill
+              width={785}
+              height={1024}
               priority
-              className="object-cover rounded-xl"
+              className="w-full h-auto rounded-xl"
             />
           </div>
         </div>
