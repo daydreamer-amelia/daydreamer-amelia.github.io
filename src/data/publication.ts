@@ -45,7 +45,7 @@ export const publicationData: Publication[] = [
     authors: "Xinlei Wang✉, Ruibo Ming, Jing Qiu, Junhua Zhao, Jinjin Gu",
     topics: ["AI Sustainability"],
     paperUrl: "https://arxiv.org/abs/2605.01549",
-    codeUrl: "https://github.com/insait-institute/HuggingCarbon",
+    codeUrl: "https://huggingcarbon.insait.ai/",
     imageUrl: "/images/publications/hugging-carbon.png",
     award: "ICML 2026: Papers that Matters by Nebius Science",
     awardUrl: "https://nebius.science/stories/icml-papers-that-matter",

@@ -20,7 +20,7 @@ export const serviceData: Service[] = [
     conferences: [
       { name: "ICML", years: ["2025", "2026"] },
       { name: "NeurIPS", years: ["2025", "2026"] },
-      { name: "AAAI", years: ["2026"] },
+      { name: "AAAI", years: ["2026", "2027"] },
       { name: "ICLR", years: ["2026"] },
       { name: "ACL", years: ["2026"] },
     ],

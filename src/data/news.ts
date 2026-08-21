@@ -14,6 +14,12 @@ export const newsData: News[] = [
     link: "https://2026.emnlp.org/",
   },
   {
+    date: "August 2026",
+    emoji: "🌐",
+    title: "Hugging Carbon website is live",
+    link: "https://huggingcarbon.insait.ai/",
+  },
+  {
     date: "July 2026",
     emoji: "🌱",
     title:
