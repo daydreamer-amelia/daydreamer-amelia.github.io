@@ -29,6 +29,16 @@ export interface Publication {
 export const publicationData: Publication[] = [
   {
     year: "2026",
+    conference: "EMNLP 2026 Main",
+    title:
+      "RePro: Proof-Verified Benchmark Rewriting for Reliable Evaluation of LLM Mathematical Problem Solving",
+    authors:
+      "Xiyuan Zhou, Zhuoqi Li, Xinlei Wang, Yirui He, Yuhao Wu, Yuheng Cheng, Yan Xu, Junhua Zhao, Jinjin Gu✉",
+    topics: ["AI for Engineering"],
+    imageUrl: "/images/publications/repro.png",
+  },
+  {
+    year: "2026",
     conference: "ICML 2026",
     title:
       "Hugging Carbon: Quantifying the Training Carbon Emissions of AI Models at Scale",
@@ -71,7 +81,7 @@ export const publicationData: Publication[] = [
     authors:
       "Xin Lu, Jing Qiu, Xinlei Wang, Jinjin Gu, Jiafeng Lin, Sihai An, Junhua Zhao",
     topics: ["AI Sustainability"],
-    paperUrl: "https://arxiv.org/abs/2510.13029",
+    paperUrl: "https://www.nature.com/articles/s44287-026-00273-y",
     imageUrl: "/images/publications/structural-alignment.png",
   },
   {

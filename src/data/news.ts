@@ -8,6 +8,12 @@ export interface News {
 
 export const newsData: News[] = [
   {
+    date: "August 2026",
+    emoji: "🎉",
+    title: "RePro is accepted at EMNLP 2026 Main Conference",
+    link: "https://2026.emnlp.org/",
+  },
+  {
     date: "July 2026",
     emoji: "🌱",
     title:
