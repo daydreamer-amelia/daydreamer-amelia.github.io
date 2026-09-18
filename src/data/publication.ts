@@ -35,6 +35,8 @@ export const publicationData: Publication[] = [
     authors:
       "Xiyuan Zhou, Zhuoqi Li, Xinlei Wang, Yirui He, Yuhao Wu, Yuheng Cheng, Yan Xu, Junhua Zhao, Jinjin Gu✉",
     topics: ["AI for Engineering"],
+    paperUrl: "https://arxiv.org/abs/2609.00062",
+    codeUrl: "https://github.com/AI4Engi/RePro",
     imageUrl: "/images/publications/repro.png",
   },
   {
